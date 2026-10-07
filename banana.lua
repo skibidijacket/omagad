@@ -1,10 +1,3 @@
-if not getgenv().SCRIPT_KEY then
-	if not SCRIPT_KEY then
-		r = "No script key provided, please pass a SCRIPT_KEY!"
-		loadstring(game:HttpGet("https://jnkie.com/sdk/love.lua"))()
-		return
-	end
-
 	local v = SCRIPT_KEY
 	getgenv().SCRIPT_KEY = v
 end
